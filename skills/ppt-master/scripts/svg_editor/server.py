@@ -2,6 +2,10 @@
 """
 PPT Master - SVG Editor Server
 
+PERMANENTLY DISABLED in this deployment: the visual editor is off and
+`main()` refuses to run. Post-export edits are applied directly to the SVG;
+the original implementation is retained below as `_main_impl()` for reference.
+
 Flask backend for the SVG annotation editor.
 Serves the web UI and provides API endpoints for reading/writing SVG annotations.
 
@@ -359,6 +363,18 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Optional[list[str]] = None) -> int:
+    """Run the CLI entry point (permanently disabled)."""
+    print(
+        "svg_editor/server.py is permanently disabled in this deployment. "
+        "The visual editor (visual-edit workflow) is off; describe precise "
+        "edits in chat and the agent edits the SVG directly.",
+        file=sys.stderr,
+    )
+    return 1
+
+
+def _main_impl(argv: Optional[list[str]] = None) -> int:
+    """Original CLI entry point (retained, unreachable)."""
     parser = build_parser()
     args = parser.parse_args(argv)
 

@@ -2,6 +2,10 @@
 """
 PPT Master - SVG Annotation Checker
 
+PERMANENTLY DISABLED in this deployment: the visual editor (visual-edit
+workflow) is off, so no edit annotations are ever created. `main()` refuses
+to run; the original implementation is retained below as `_main_impl()`.
+
 Scans SVG files for edit annotations (data-edit-target / data-edit-annotation attributes)
 and prints a human-readable summary. Used by AI agents to discover pending annotations.
 
@@ -100,6 +104,18 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Optional[list[str]] = None) -> int:
+    """Run the CLI entry point (permanently disabled)."""
+    print(
+        "check_annotations.py is permanently disabled in this deployment. "
+        "The visual editor (visual-edit workflow) is off; no edit "
+        "annotations are created.",
+        file=sys.stderr,
+    )
+    return 1
+
+
+def _main_impl(argv: Optional[list[str]] = None) -> int:
+    """Original CLI entry point (retained, unreachable)."""
     parser = build_parser()
     args = parser.parse_args(argv)
 

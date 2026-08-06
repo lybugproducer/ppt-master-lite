@@ -8,6 +8,8 @@ description: Launch a local browser-based visual editor so the user can pinpoint
 
 This workflow is **independent**: it operates on `<project_path>/svg_output/` and re-runs the same post-processing scripts the main pipeline uses. Safe to invoke in a fresh session as long as the project has reached Step 7.
 
+> ⛔ **Permanently disabled in this deployment**: the visual editor (local Flask server on 127.0.0.1) is off — `svg_editor/server.py` and `check_annotations.py` refuse to run. Do NOT start this workflow. Post-export edits are applied by editing the SVG directly; ask the user to describe the change precisely. Retained for reference only.
+
 ## When to Run
 
 - The deck has been exported once (Steps 1–7 of the main workflow are complete).

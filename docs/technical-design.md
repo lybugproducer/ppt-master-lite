@@ -2,7 +2,7 @@
 
 [English](./technical-design.md) | [中文](./zh/technical-design.md)
 
-> **Deployment note**: in this deployment, external-server scripts are permanently disabled — `web_to_md.py` (web fetch), `image_gen.py` / `image_search.py` (AI / web images), `notes_to_audio.py` (online TTS), `--recorded-narration` (video export), and `update_repo.py`. Do NOT run them; see the corresponding docs for the disabled guidance.
+> **Deployment note**: in this deployment, external-server scripts are permanently disabled — `web_to_md.py` (web fetch), `image_gen.py` / `image_search.py` (AI / web images), `notes_to_audio.py` (online TTS), `--recorded-narration` (video export), and `update_repo.py`. The local visual editor (`visual-edit` workflow) is also disabled by policy. Do NOT run them; see the corresponding docs for the disabled guidance.
 
 ---
 

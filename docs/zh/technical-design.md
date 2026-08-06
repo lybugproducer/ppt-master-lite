@@ -2,7 +2,7 @@
 
 [English](../technical-design.md) | [中文](./technical-design.md)
 
-> **部署说明**：本部署中，所有访问外部服务器的脚本均已永久禁用——`web_to_md.py`（网页抓取）、`image_gen.py` / `image_search.py`（AI/网络配图）、`notes_to_audio.py`（在线 TTS）、`--recorded-narration`（视频导出）和 `update_repo.py`。不要运行它们；详见对应文档中的禁用说明。
+> **部署说明**：本部署中，所有访问外部服务器的脚本均已永久禁用——`web_to_md.py`（网页抓取）、`image_gen.py` / `image_search.py`（AI/网络配图）、`notes_to_audio.py`（在线 TTS）、`--recorded-narration`（视频导出）和 `update_repo.py`。本地可视化编辑器（visual-edit 工作流）同样按部署策略禁用。不要运行它们；详见对应文档中的禁用说明。
 
 ---
 
